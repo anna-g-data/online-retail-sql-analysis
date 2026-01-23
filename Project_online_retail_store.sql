@@ -245,7 +245,7 @@ SELECT
   ) AS AOV
 FROM online_retail_clean;
 
--- Results:
+ Results:
 -- total_orders: 18,532
 -- total_revenue: 8,911,407.90
 -- AOV: 480.87
@@ -265,7 +265,7 @@ GROUP BY description
 ORDER BY total_revenue DESC
 LIMIT 1;
 
--- Result:
+ Result:
 -- “PAPER CRAFT , LITTLE BIRDIE” ≈ £168,469.60
 
 -- Interpretation:
@@ -343,55 +343,42 @@ III. Project summary
 * Sales Performance
 
 -- Total sales revenue is approximately £8.9 million.
-
 -- The average order value (AOV) is about £480 per order.
-
 -- This suggests that customers often buy multiple items in one order.
 
 
 * Customers
 
 -- There are 4,338 unique customers.
-
 -- A small group of customers generates a large part of total revenue.
-
 -- The top customer spent more than £280,000.
-
---  High-value customers are very important for the business and should be retained.
+-- High-value customers are very important for the business and should be retained.
 
 
 * Products
 
 -- The best-selling product by revenue is “PAPER CRAFT, LITTLE BIRDIE.”
-
 -- Decorative and gift products dominate sales.
-
 -- “POSTAGE” appears as a top revenue item, meaning shipping costs are included in revenue.
-
 -- In real business analysis, product revenue and shipping revenue may need to be separated.
 
 * Countries
 
 -- The United Kingdom generates the highest revenue (about £7.3 million).
-
 -- International sales are much smaller compared to the UK market.
-
 -- The company mainly depends on domestic customers.
 
 
 * Seasonality
 
 -- The highest sales occur in November, December, and October.
-
 -- This shows strong seasonal demand during the holiday period.
-
 -- Sales planning and marketing campaigns should focus on Q4.
 
 
 * Data Quality
 
 -- Cancelled orders, returns, invalid prices, and missing customers were removed.
-
 -- Dates were successfully converted into timestamp format.
-
 -- The cleaned dataset allows accurate and trustworthy analysis.
+
