@@ -248,7 +248,7 @@ ORDER BY total_revenue DESC
 LIMIT 1;
 
 -- Result:
--- “PAPER CRAFT , LITTLE BIRDIE” = £168,469.60
+-- “PAPER CRAFT, LITTLE BIRDIE” = £168,469.60
 
 6. Top 10 products
 
@@ -274,6 +274,11 @@ GROUP BY country
 ORDER BY total_revenue DESC
 LIMIT 5;
 
+--Interpretation:
+-- The United Kingdom generated the highest revenue (£7.3M), far exceeding all other countries.
+-- The next highest revenues came from Netherlands, EIRE, Germany, and France, but at much lower levels.
+-- This confirms that the business is strongly UK-focused, with international sales representing a small portion of total revenue.
+
 8. Which month had the highest revenue?
 
 SELECT
@@ -285,8 +290,8 @@ ORDER BY total_revenue DESC
 LIMIT 5;
 
 -- Interpretation:
--- This analysis uses month number only and does not separate different years.
--- A more advanced analysis could include year-month grouping.
+-- The revenue stays pretty similar throughout the year, but there is a big jump in the months of October, November, and December.
+-- December has the highest revenue, which is £1.09M. This could be because of higher sales during the holiday season.
 
 9. Top 5 Customers by Spending
 
@@ -297,6 +302,12 @@ FROM online_retail_clean
 GROUP BY customerid
 ORDER BY total_spent DESC
 LIMIT 5;
+
+--Interpretation:
+-- The top 5 customers by spending come from Netherlands (1st), UK (2nd, 3rd, 4th), and EIRE (5th).
+-- Customer 14646 from the Netherlands spent the most with £280,206.
+-- Three out of the top 5 customers are from the UK, highlighting the significance of the UK market.
+
 
 III. Project summary
 
@@ -330,4 +341,5 @@ III. Project summary
 -- Cancelled orders, returns, invalid prices, and missing customers were removed.
 -- Dates were successfully converted into timestamp format.
 -- The cleaned dataset allows accurate and trustworthy analysis.
+
 
